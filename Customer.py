@@ -16,8 +16,9 @@ class Customer:
         full_address=''
         
         if self.company=="":
-            full_address+=self.firstName+" "+self.lastName+"\n"+self.address
-            
-        
+            full_address+=self.firstName+" "+self.lastName+"\n"+self.address+"\n"+self.city+", " +self.state+" "+str(self.zip)
+        else:
+            full_address+=self.firstName+" "+self.lastName+"\n"+self.company+"\n"+self.address+"\n"+self.city+", " +self.state+" "+str(self.zip)
+        return full_address
     
     
