@@ -1,16 +1,14 @@
-from dataclasses import dataclass
-
-@dataclass
 
 class Customer:
-    id:int
-    firstName:str
-    lastName:str
-    company:str
-    address:str
-    city:str
-    state:str
-    zip:int
+    def __init__(self):
+        self.id
+        self.firstName
+        self.lastName
+        self.company
+        self.address
+        self.city
+        self.state
+        self.zip
     
     def getfull_address(self):
         full_address=''
